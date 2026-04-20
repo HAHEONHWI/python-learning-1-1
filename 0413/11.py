@@ -12,4 +12,3 @@ for name in files:
 
 for ext in sorted(ext_count):
     print(ext, ext_count[ext])
-    #123123
