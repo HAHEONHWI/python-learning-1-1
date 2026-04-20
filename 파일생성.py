@@ -3,7 +3,7 @@ import os
 a = int(input("a: "))
 b = int(input("b: "))
 
-folder_path = "/Users/dgsw09/수업/py/0413"
+folder_path = "/Users/dgsw09/수업/py/0420"
 
 # 폴더 없으면 생성
 os.makedirs(folder_path, exist_ok=True)
