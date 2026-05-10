@@ -7,3 +7,5 @@ def hanoi(n, start, end, temp):
     print(f"{start} -> {end}")
     hanoi(n - 1, temp, end, start)
 
+n = int(input('원판 개수 :'))
+hanoi(n, 'A', 'C', 'B')
