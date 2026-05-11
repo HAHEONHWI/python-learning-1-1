@@ -12,7 +12,6 @@ def selection_sort(arr):
 
     return arr
 
-
 data = [29, 10, 14, 37, 13]
 
 print('정렬 전 :', data)
