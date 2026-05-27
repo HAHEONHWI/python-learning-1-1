@@ -17,7 +17,7 @@ class Subject:
             + self.importance * 2
             + (10 - self.study_amount) * 2
         )
-
+# -----------------------------------------------
 
 def positive_number(message):
     # 0보다 큰 정수만 받기 위한 입력 검증
@@ -44,6 +44,7 @@ def range_number(message):
         except ValueError:
             print("숫자로 입력하세요.")
 
+# -----------------------------------------------
 
 subjects = []
 
@@ -69,7 +70,7 @@ for subject in subjects:
     subject.calculate_score()
 
 # 점수가 높은 과목부터 정렬
-subjects.sort(key=lambda subject: subject.score, reverse=True)
+subjects.sort(key=lambda subject: subject.score, reverse=True) #람다 풀어서 쓰기
 
 count = len(subjects)
 
@@ -81,6 +82,7 @@ for i, subject in enumerate(subjects):
         subject.study_level = "중간"
     else:
         subject.study_level = "비교적 적게"
+
 
 print("\n===== 시험공부 계획 =====")
 print(f"총 공부 가능 시간: {total_study_time}시간")
